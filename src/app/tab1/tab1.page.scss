@@ -1,0 +1,15 @@
+img {
+  height: 50%;
+  border-radius: 50%;
+  box-shadow: -1px 0px 0px 3px rgba(157,157,157,0.7);
+  -webkit-box-shadow: -1px 0px 0px 3px rgba(157,157,157,0.7);
+  -moz-box-shadow: -1px 0px 0px 3px rgba(157,157,157,0.7);
+}
+
+.container-coin {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-flow: column;
+
+}
