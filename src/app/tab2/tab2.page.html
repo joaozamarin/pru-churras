@@ -7,33 +7,37 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-item class="ion-justify-content-center ion-align-items-center" color="medium">
+    <ion-label>Valendo: {{valendo}}</ion-label>
+  </ion-item>
+
   <div class="container ion-justify-content-center ion-align-items-center">
-    <ion-button size="default">1</ion-button>
-    <ion-button size="default">3</ion-button>
-    <ion-button size="default">6</ion-button>
-    <ion-button size="default">9</ion-button>
-    <ion-button size="default">12</ion-button>
+    <ion-button size="default" (click)="valorRodada(1)">1</ion-button>
+    <ion-button size="default" (click)="valorRodada(3)">3</ion-button>
+    <ion-button size="default" (click)="valorRodada(6)">6</ion-button>
+    <ion-button size="default" (click)="valorRodada(9)">9</ion-button>
+    <ion-button size="default" (click)="valorRodada(12)">12</ion-button>
   </div>
 
   <ion-grid>
     <ion-row>
       <ion-col class="ion-justify-content-center ion-align-items-center">
-        <ion-button size="large" expand="full">+</ion-button>
-        <span>Valor</span>
-        <ion-button size="large" expand="full">-</ion-button>
+        <ion-button size="large" expand="full" (click)="pontuarRodadaTime1()">+</ion-button>
+        <span>{{pontuacaoRodadaTime1}}</span>
+        <ion-button size="large" expand="full" (click)="subtrairPontoTime1()">-</ion-button>
         <div class="times">
-          <span>Time 02</span>
-          <span>Valor</span>
+          <span>Time 01</span>
+          <span>{{pontuacaoTime1}}</span>
         </div>
       </ion-col>
       <ion-col></ion-col>
       <ion-col class="ion-justify-content-center ion-align-items-center">
-        <ion-button size="large" expand="full">+</ion-button>
-        <span>Valor</span>
-        <ion-button size="large" expand="full">-</ion-button>
+        <ion-button size="large" expand="full" (click)="pontuarRodadaTime2()">+</ion-button>
+        <span>{{pontuacaoRodadaTime2}}</span>
+        <ion-button size="large" expand="full" (click)="subtrairPontoTime2()">-</ion-button>
         <div class="times">
           <span>Time 02</span>
-          <span>Valor</span>
+          <span>{{pontuacaoTime2}}</span>
         </div>
       </ion-col>
     </ion-row>
@@ -41,7 +45,7 @@
 </ion-content>
 
 <ion-footer>
-  <ion-toolbar color="danger">
+  <ion-toolbar color="danger" (click)="resetar()">
     <ion-title class="ion-text-center"> RESETAR</ion-title>
   </ion-toolbar>
 </ion-footer>
