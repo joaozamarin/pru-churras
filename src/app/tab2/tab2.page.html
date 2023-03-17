@@ -12,11 +12,11 @@
   </ion-item>
 
   <div class="container ion-justify-content-center ion-align-items-center">
-    <ion-button size="default" (click)="valorRodada(1)">1</ion-button>
-    <ion-button size="default" (click)="valorRodada(3)">3</ion-button>
-    <ion-button size="default" (click)="valorRodada(6)">6</ion-button>
-    <ion-button size="default" (click)="valorRodada(9)">9</ion-button>
-    <ion-button size="default" (click)="valorRodada(12)">12</ion-button>
+    <ion-button [fill]="mudarCor(1)" size="default" (click)="valorRodada(1)">1</ion-button>
+    <ion-button [fill]="mudarCor(3)" size="default" (click)="valorRodada(3)">3</ion-button>
+    <ion-button [fill]="mudarCor(6)" size="default" (click)="valorRodada(6)">6</ion-button>
+    <ion-button [fill]="mudarCor(9)" size="default" (click)="valorRodada(9)">9</ion-button>
+    <ion-button [fill]="mudarCor(12)" size="default" (click)="valorRodada(12)">12</ion-button>
   </div>
 
   <ion-grid>

@@ -103,4 +103,8 @@ export class Tab2Page {
     this.pontuacaoTime2 = 0;
   }
 
+  mudarCor(valor: number) {
+    return this.valendo == valor ? 'outline' : 'solid';
+  }
+
 }
